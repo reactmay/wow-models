@@ -15,7 +15,7 @@ use reactmay\WoWModels\Characters\Character;
  * 
  * @property int $id
  * @property string $username
- * @property string $sha_pass_hash
+ * @property string $pass_hash
  * @property string $sessionkey
  * @property string $v
  * @property string $s
@@ -30,7 +30,7 @@ use reactmay\WoWModels\Characters\Character;
  * @property string $lock_country
  * @property \Carbon\Carbon $last_login
  * @property int $online
- * @property int $expansion
+ * @property int $expansion_id
  * @property int $mutetime
  * @property string $mutereason
  * @property string $muteby
@@ -54,7 +54,7 @@ class Account extends Eloquent
 		'failed_logins' => 'int',
 		'locked' => 'int',
 		'online' => 'int',
-		'expansion' => 'int',
+		'expansion_id' => 'int',
 		'mutetime' => 'int',
 		'locale' => 'int',
 		'recruiter' => 'int'
@@ -66,7 +66,7 @@ class Account extends Eloquent
 	];
 
 	protected $hidden = [
-	    'sha_pass_hash',
+	    'pass_hash',
         'sessionkey',
         'v',
         's',
@@ -80,7 +80,7 @@ class Account extends Eloquent
 
 	protected $fillable = [
 		'username',
-		'sha_pass_hash',
+		'pass_hash',
 		'token_key',
 		'email',
 		'reg_mail',
@@ -92,7 +92,7 @@ class Account extends Eloquent
 		'lock_country',
 		'last_login',
 		'online',
-		'expansion',
+		'expansion_id',
 		'mutetime',
 		'mutereason',
 		'muteby',
