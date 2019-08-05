@@ -123,6 +123,6 @@ class Account extends Eloquent
     }
 
     public function balance(){
-        return $this->hasMany(AccountBalance::class, 'account_id');
+        return $this->hasOne(AccountBalance::class, 'account_id');
     }
 }
