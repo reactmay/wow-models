@@ -121,4 +121,8 @@ class Account extends Eloquent
     public function mutes(){
         return $this->hasMany(AccountMuted::class, 'guid');
     }
+
+    public function balance(){
+        return $this->hasMany(AccountBalance::class, 'account_id');
+    }
 }
