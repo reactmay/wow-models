@@ -50,8 +50,4 @@ class CharacterStats extends Eloquent
         'spellPower',
         'resilience'
     ];
-
-    public function character_stats(){
-        return $this->belongsTo(Character::class, 'guid', 'guid');
-    }
 }
