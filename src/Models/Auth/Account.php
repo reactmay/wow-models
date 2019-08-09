@@ -126,8 +126,4 @@ class Account extends Eloquent
     public function balance(){
         return $this->hasOne(AccountBalance::class, 'account_id');
     }
-
-    public function character_stats() {
-        return $this->hasOne(CharacterStats::class, 'account_id');
-    }
 }
