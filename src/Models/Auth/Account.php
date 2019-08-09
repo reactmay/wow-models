@@ -9,6 +9,7 @@ namespace reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use reactmay\WoWModels\Characters\Character;
+use reactmay\WoWModels\Characters\CharacterStats;
 
 /**
  * Class Account
@@ -124,5 +125,9 @@ class Account extends Eloquent
 
     public function balance(){
         return $this->hasOne(AccountBalance::class, 'account_id');
+    }
+
+    public function character_stats(){
+        return $this->hasMany(CharacterStats::class, 'account');
     }
 }
