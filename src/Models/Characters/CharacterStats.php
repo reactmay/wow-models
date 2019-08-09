@@ -8,7 +8,7 @@
 
 namespace reactmay\WoWModels\Characters;
 
-use Reliese\Database\Eloquent\Model as Eloquent;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class CharacterStats extends Eloquent
 {
