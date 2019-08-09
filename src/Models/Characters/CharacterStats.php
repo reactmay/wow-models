@@ -14,6 +14,7 @@ class CharacterStats extends Eloquent
 {
     protected $connection = 'characters';
     protected $primaryKey = 'guid';
+    protected $table = 'character_stats';
     public $incrementing = false;
     public $timestamps = false;
 

@@ -128,6 +128,6 @@ class Account extends Eloquent
     }
 
     public function character_stats(){
-        return $this->hasMany(CharacterStats::class, 'account');
+        return $this->hasMany(CharacterStats::class, 'account_id');
     }
 }
