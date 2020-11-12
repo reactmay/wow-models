@@ -6,7 +6,7 @@
  * Time: 20:56
  */
 
-namespace Vendor\reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
