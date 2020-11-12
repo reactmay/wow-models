@@ -1,6 +1,6 @@
 <?php
 
-namespace reactmay\WoWModels\Auth;
+namespace Vendor\reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
