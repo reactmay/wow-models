@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:02:13 +0000.
  */
 
-namespace Reactmay\WoWModels\Characters;
+namespace reactmay\WoWModels\Characters;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 

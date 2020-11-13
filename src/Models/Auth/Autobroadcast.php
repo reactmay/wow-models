@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:05:44 +0000.
  */
 
-namespace Reactmay\WoWModels\Auth;
+namespace reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
