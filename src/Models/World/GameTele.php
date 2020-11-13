@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $map
  * @property string $name
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class GameTele extends Eloquent
 {

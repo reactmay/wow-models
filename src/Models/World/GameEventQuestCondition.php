@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $condition_id
  * @property float $num
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class GameEventQuestCondition extends Eloquent
 {

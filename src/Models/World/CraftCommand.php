@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $skill_level
  * @property string $description
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class CraftCommand extends Eloquent
 {

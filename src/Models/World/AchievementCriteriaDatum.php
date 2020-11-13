@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $value2
  * @property string $ScriptName
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class AchievementCriteriaDatum extends Eloquent
 {

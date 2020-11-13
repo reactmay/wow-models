@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:05:44 +0000.
  */
 
-namespace reactmay\WoWModels\Auth;
+namespace Reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property float $lat
  * @property float $lon
  *
- * @package reactmay\WoWModels\Auth
+ * @package Reactmay\WoWModels\Auth
  */
 class Ip2nationCountry extends Eloquent
 {

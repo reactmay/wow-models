@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -109,7 +109,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $SchoolMask
  * @property string $Comment
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class SpellDbc extends Eloquent
 {

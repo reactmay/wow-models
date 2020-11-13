@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:02:13 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 
@@ -20,7 +20,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property int $seasonWins
  * @property int $personalRating
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class ArenaTeamMember extends Eloquent
 {

@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:02:13 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 
@@ -18,7 +18,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * @property string $comment
  * @property int $createTime
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class GmSurvey extends Eloquent
 {

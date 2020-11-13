@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:05:44 +0000.
  */
 
-namespace reactmay\WoWModels\Auth;
+namespace Reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -17,10 +17,10 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property bool $granted
  * @property int $realmId
  * 
- * @property \reactmay\WoWModels\Auth\Account $account
- * @property \reactmay\WoWModels\Auth\RbacPermission $rbac_permission
+ * @property \Reactmay\WoWModels\Auth\Account $account
+ * @property \Reactmay\WoWModels\Auth\RbacPermission $rbac_permission
  *
- * @package reactmay\WoWModels\Auth
+ * @package Reactmay\WoWModels\Auth
  */
 class RbacAccountPermission extends Eloquent
 {
@@ -41,11 +41,11 @@ class RbacAccountPermission extends Eloquent
 
 	public function account()
 	{
-		return $this->belongsTo(\reactmay\WoWModels\Auth\Account::class, 'accountId');
+		return $this->belongsTo(\Reactmay\WoWModels\Auth\Account::class, 'accountId');
 	}
 
 	public function rbac_permission()
 	{
-		return $this->belongsTo(\reactmay\WoWModels\Auth\RbacPermission::class, 'permissionId');
+		return $this->belongsTo(\Reactmay\WoWModels\Auth\RbacPermission::class, 'permissionId');
 	}
 }

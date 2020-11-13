@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:05:44 +0000.
  */
 
-namespace reactmay\WoWModels\Auth;
+namespace Reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property \Illuminate\Database\Eloquent\Collection $rbac_default_permissions
  * @property \Illuminate\Database\Eloquent\Collection $rbac_linked_permissions
  *
- * @package reactmay\WoWModels\Auth
+ * @package Reactmay\WoWModels\Auth
  */
 class RbacPermission extends Eloquent
 {
@@ -37,16 +37,16 @@ class RbacPermission extends Eloquent
 
 	public function rbac_account_permissions()
 	{
-		return $this->hasMany(\reactmay\WoWModels\Auth\RbacAccountPermission::class, 'permissionId');
+		return $this->hasMany(\Reactmay\WoWModels\Auth\RbacAccountPermission::class, 'permissionId');
 	}
 
 	public function rbac_default_permissions()
 	{
-		return $this->hasMany(\reactmay\WoWModels\Auth\RbacDefaultPermission::class, 'permissionId');
+		return $this->hasMany(\Reactmay\WoWModels\Auth\RbacDefaultPermission::class, 'permissionId');
 	}
 
 	public function rbac_linked_permissions()
 	{
-		return $this->hasMany(\reactmay\WoWModels\Auth\RbacLinkedPermission::class, 'linkedId');
+		return $this->hasMany(\Reactmay\WoWModels\Auth\RbacLinkedPermission::class, 'linkedId');
 	}
 }

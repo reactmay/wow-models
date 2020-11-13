@@ -5,11 +5,11 @@
  * Date: Wed, 21 Dec 2016 15:05:44 +0000.
  */
 
-namespace reactmay\WoWModels\Auth;
+namespace Reactmay\WoWModels\Auth;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use reactmay\WoWModels\Characters\Character;
-use reactmay\WoWModels\Characters\CharacterStats;
+use Reactmay\WoWModels\Characters\Character;
+use Reactmay\WoWModels\Characters\CharacterStats;
 
 /**
  * Class Account
@@ -43,7 +43,7 @@ use reactmay\WoWModels\Characters\CharacterStats;
  * 
  * @property \Illuminate\Database\Eloquent\Collection $rbac_account_permissions
  *
- * @package reactmay\WoWModels\Auth
+ * @package Reactmay\WoWModels\Auth
  */
 class Account extends Eloquent
 {
@@ -104,7 +104,7 @@ class Account extends Eloquent
 
 	public function rbac_account_permissions()
 	{
-		return $this->hasMany(\reactmay\WoWModels\Auth\RbacAccountPermission::class, 'accountId');
+		return $this->hasMany(\Reactmay\WoWModels\Auth\RbacAccountPermission::class, 'accountId');
 	}
 
 	public function accesses(){

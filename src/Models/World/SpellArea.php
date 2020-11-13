@@ -5,7 +5,7 @@
  * Date: Wed, 21 Dec 2016 15:07:57 +0000.
  */
 
-namespace reactmay\WoWModels\Characters;
+namespace Reactmay\WoWModels\Characters;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
  * @property int $quest_start_status
  * @property int $quest_end_status
  *
- * @package reactmay\WoWModels\Characters
+ * @package Reactmay\WoWModels\Characters
  */
 class SpellArea extends Eloquent
 {
